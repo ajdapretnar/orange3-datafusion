@@ -1,0 +1,7 @@
+Orange3 Data Fusion
+===================
+
+Orange add-on with widgets for integration of large heterogeneous data sets into
+ sensible clusters of related data instances. The widgets enable matrix
+ tri-factorization, latent factor identification, matrix sampling, model
+ scoring, chaining and more.

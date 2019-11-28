@@ -1,8 +1,12 @@
 #!/usr/bin/env python
 
+from os import path
 from setuptools import setup, find_packages
-import distutils
+
 VERSION = '0.1.11'
+
+README_FILE = path.join(path.dirname(__file__), 'README.pypi')
+LONG_DESCRIPTION = open(README_FILE).read()
 
 ENTRY_POINTS = {
     'orange3.addon': (
@@ -32,9 +36,10 @@ if __name__ == '__main__':
     setup(
         name="Orange3-DataFusion",
         description="Orange DataFusion add-on.",
+        long_description=LONG_DESCRIPTION,
         version=VERSION,
         author='Bioinformatics Laboratory, FRI UL',
-        author_email='contact@orange.biolab.si',
+        author_email='info@biolab.si',
         url='https://github.com/biolab/orange3-datafusion',
         keywords=(
             'data mining',
